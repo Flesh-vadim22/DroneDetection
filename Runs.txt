@@ -1,3 +1,4 @@
 yolov5:
-	cd repositories\yolov5
-	python train.py --img 640 --batch 64 --epochs 60 --data F:\Projects\леванова\dronedetect\configs\yolov5_dataset.yaml --weights yolov5s.pt --cache
+   cd repositories\yolov5
+   train-run: python train.py --img 640 --batch 64 --epochs 60 --data F:\Projects\леванова\dronedetect\configs\yolov5_dataset.yaml --weights yolov5s.pt --cache
+   test-run: python train.py --img 640 --batch 64 --epochs 60 --data F:\Projects\леванова\dronedetect\configs\yolov5_dataset_run_test.yaml--weights yolov5s.pt --cache
