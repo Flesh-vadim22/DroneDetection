@@ -50,3 +50,17 @@ Project Organization
 --------
 
 <p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
+
+Best weights
+==============================
+[Best weight for a single data set ](https://drive.google.com/drive/folders/1hcAl4PNnSG79NueeN6efolObRZTxm2DZ?usp=sharing)
+
+Reports
+==============================
+Reports for seperate data set:
+- [Yolov7](https://github.com/Flesh-vadim22/DroneDetection/tree/experiments/reports/yolov7)
+
+Repositories
+==============================
+Official repositories :
+- [Yolov7](https://github.com/WongKinYiu/yolov7)
