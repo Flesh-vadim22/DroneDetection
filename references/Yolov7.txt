@@ -1,0 +1,2 @@
+GitHub: https://github.com/WongKinYiu/yolov7
+Implementation of paper: https://arxiv.org/abs/2207.02696

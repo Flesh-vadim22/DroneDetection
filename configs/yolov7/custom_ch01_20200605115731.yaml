@@ -1,0 +1,15 @@
+# COCO 2017 dataset http://cocodataset.org
+
+# download command/URL (optional)
+#download: bash ./scripts/get_coco.sh
+
+# train and val data as 1) directory: path/images/, 2) file: path/images.txt, or 3) list: [path1/images/, path2/images/]
+train: /content/drive/MyDrive/Кружок_по_МО/Projects/DroneDetection/DataDroneDetection/ch01_20200605115731/train_ch01_20200605115731.txt
+val: /content/drive/MyDrive/Кружок_по_МО/Projects/DroneDetection/DataDroneDetection/ch01_20200605115731/valid_ch01_20200605115731.txt
+#test: ./coco/test-dev2017.txt  # 20288 of 40670 images, submit to https://competitions.codalab.org/competitions/20794
+
+# number of classes
+nc: 1
+
+# class names
+names: ['drone']

@@ -96,7 +96,15 @@ target/
 .git/
 
 # models repositories
-#repositories/
+repositories/
 
 # data
 data/raw/
+data/processed/
+
+#weights
+models/yolov7/best_weights/best_custom_00_01_52_to_00_01_58.pt
+models/yolov7/best_weights/best_custom_00_02_45_to_00_03_10_cut.pt
+models/yolov7/best_weights/best_custom_00_06_10_to_00_06_27.pt
+models/yolov7/best_weights/best_custom_00_09_30_to_00_10_09.pt
+models/yolov7/best_weights/best_custom_ch01_20200605115731.pt

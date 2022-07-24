@@ -3,34 +3,31 @@ import glob
 import shutil
 
 
-def move_imgs_to_folder(from_path, to_path, threshold=0.25):
-    folders_data = os.listdir(from_path)
-  #  for folder in folders_data
-    folder = folders_data[5]
-    if os.path.isdir(from_path + r'\\' + folder):
-        imgs_path = from_path + r'\\' + folder
-        os.chdir(imgs_path)
-        imgs = glob.glob("*.jpg")
-        labels = glob.glob("*.txt")
-        cout_files = len(imgs)
-        print(cout_files)
-        cout_valid = round(cout_files * threshold)
-        print(cout_valid)
-        k = 0
-        for item in range(0, cout_files):
-            if imgs[item] == "ch01_20200605113709-part 00000-frame 00023008.jpg":
-                continue
-            if k <=cout_valid:
-                shutil.copy(imgs_path + r"\\" + imgs[item], to_path + r"\images\valid")
-                shutil.copy(imgs_path + r"\\" + labels[item], to_path + r"\labels\yolo_format\valid")
-                k+=1
-            else:
-                shutil.copy(imgs_path + r"\\" + imgs[item], to_path + r"\images\train")
-                shutil.copy(imgs_path + r"\\" + labels[item], to_path + r"\labels\yolo_format\train")
+def sorted_imgs(path):
+    files = os.listdir(path)
+    for folder_name in files:
+        if os.path.isdir(file):
+            train_path = path + folder_name + r"\train_" + folder_name + ".txt"
+            valid_path = path + folder_name + r"\valid_" + folder_name + ".txt"
+
+            with open(train_path, 'r') as f:
+                train_files = f.readlines()
+            train_files.sort()
+            with open(train_path, 'w') as f:
+                for file in train_files:
+                    f.write(file)
+
+            with open(valid_path, 'r') as f:
+                valid_files = f.readlines()
+                valid_files.sort()
+                for file in valid_files:
+                    f.write(file)
+
+            with open(valid_path, 'w') as f:
+                for file in valid_files:
+                    f.write(file)
 
 
 if __name__ == '__main__':
-    threshold = 0.25
-    from_path = r"F:\Projects\леванова\dronedetect\data\raw"
-    to_path = "F:\Projects\леванова\dronedetect\data\processed"
-    move_imgs_to_folder(from_path, to_path, threshold)
+    path = r"F:\Projects\Levanova\dronedetect\data\raw\00_01_52_to_00_01_58\\"
+    sorted_imgs(path)

@@ -1,4 +1,9 @@
 yolov5:
    cd repositories\yolov5
-   train-run: python train.py --img 640 --batch 64 --epochs 60 --data F:\Projects\леванова\dronedetect\configs\yolov5_dataset.yaml --weights yolov5s.pt --cache
-   test-run: python train.py --img 640 --batch 64 --epochs 60 --data F:\Projects\леванова\dronedetect\configs\yolov5_dataset_run_test.yaml--weights yolov5s.pt --cache
+   train-run: python train.py --img 640 --batch 64 --epochs 60 --data F:\Projects\Levanova\dronedetect\configs\yolov5_dataset.yaml --weights yolov5s.pt --cache
+   test-run: python train.py --img 640 --batch 64 --epochs 60 --data F:\Projects\Levanova\dronedetect\configs\yolov5_dataset_run_test.yaml--weights yolov5s.pt --cache
+
+yolov7:
+   cd repositories\yolov7
+   train-run:
+   test-run: python train.py --workers 8 --device 0 --batch-size 32 --data F:\Projects\Levanova\dronedetect\configs\yolov7_dataset_run_test.yaml --img 640 640 --cfg F:\Projects\Levanova\dronedetect\repositories\yolov7\cfg\training\yolov7_custom.yaml --weights '' --name yolov7 --hyp F:\Projects\Levanova\dronedetect\repositories\yolov7\data\hyp.scratch.custom_data.yaml

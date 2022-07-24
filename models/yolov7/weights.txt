@@ -1,0 +1,7 @@
+1)Weights 00_01_52_to_00_01_58: https://drive.google.com/drive/folders/1CLu7svrISIyUEDiYX9cO2ECT1DAmCVCk?usp=sharing
+2)Weights 00_02_45_to_00_03_10_cut:https://drive.google.com/drive/folders/11VHKuI4o4cNU-udPhA15YcU_weqErpO7?usp=sharing
+3)Weights 00_06_10_to_00_06_27: https://drive.google.com/drive/folders/14K5ehEyi6YEmnwKXzerOeVVBuIIeFfz-?usp=sharing
+4)Weights 00_09_30_to_00_10_09: https://drive.google.com/drive/folders/172v8Fdij4md-hDURKlkoLyrs-2dkEv2-?usp=sharing
+5)Weights ch01_20200605115731: https://drive.google.com/drive/folders/19VocnSW1bpS5OHDhykyGRz8GjodH99wj?usp=sharing
+6)Weights ch02_20200605110136:https://drive.google.com/drive/folders/19QA4THL1mRe84Qu8_76U37TzthITrogy?usp=sharing
+7)Weights ch02_20200605113754:https://drive.google.com/drive/folders/1CM-QllVPABPtvRDq2P3F37n2bhkg3keY?usp=sharing
